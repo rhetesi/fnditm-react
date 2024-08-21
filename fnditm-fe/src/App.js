@@ -37,7 +37,33 @@ function App() {
               </p>
             </div>
           </div>
-          <div><Card /></div>
+
+          <div className="mt-4">
+            <div className="row g-4">
+              <div className="col">
+                <Card />
+              </div>
+              <div className="col">
+                <Card />
+              </div>
+              <div className="col">
+                <Card />
+              </div>
+              <div className="col">
+                <Card />
+              </div>
+              <div className="col">
+                <Card />
+              </div>
+              <div className="col">
+                <Card />
+              </div>
+              {/* A következő kártxával lehet szórakozni kivenni-visszarakni */}
+              <div className="col">
+                <Card />
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>

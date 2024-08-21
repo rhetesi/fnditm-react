@@ -3,7 +3,7 @@ import cardPlaceholder from "../pics/placeholder_681_528px.png";
 export default function Card() {
   return (
     <>
-      <div className="card border-secondary">
+      <div className="card border-secondary h-100">
         <img
           src={cardPlaceholder}
           className="card-img-top cardPlaceholder"
