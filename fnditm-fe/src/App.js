@@ -48,7 +48,7 @@ function App() {
                   //   </div>
                   // </div>
                   
-                  <Card item={item}/>
+                  <Card item={item} index={index}/>
                   
                 )
               })

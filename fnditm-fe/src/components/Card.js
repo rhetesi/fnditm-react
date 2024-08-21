@@ -3,11 +3,11 @@ import cardPlaceholder from "../pics/placeholder_681_528px.png";
 // const itemName = item.name;
 // const itemDescription = item.description;
 
-function Card({item}) {
+function Card({item, index}) {
   return (
     <>
       <div className="col">
-        <div className="card border-secondary h-100">
+        <div key={index} className="card border-secondary h-100">
           <img
             src={cardPlaceholder}
             className="card-img-top cardPlaceholder"
