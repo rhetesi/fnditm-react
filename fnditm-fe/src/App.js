@@ -37,7 +37,7 @@ function App() {
               </p>
             </div>
           </div>
-          <div>{Card}</div>
+          <div><Card /></div>
         </div>
       </main>
     </div>
