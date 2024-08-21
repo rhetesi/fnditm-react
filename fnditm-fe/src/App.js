@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import cardPlaceholder from "./pics/placeholder_681_528px.png";
+// import cardPlaceholder from "./pics/placeholder_681_528px.png";
 import Card from "./components/Card.js";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
       </header>
       <main>
         <div className="container-fluid p-4">
-          <div className="card border-secondary">
+          {/* <div className="card border-secondary">
             <img
               src={cardPlaceholder}
               className="card-img-top cardPlaceholder"
@@ -36,9 +36,9 @@ function App() {
                 the bulk of the card's content.
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div className="mt-4">
+          <div className="mt-2">
             <div className="row g-4">
               <div className="col">
                 <Card />
