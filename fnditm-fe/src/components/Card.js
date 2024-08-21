@@ -1,7 +1,4 @@
-// import items from "../dev/db";
 import cardPlaceholder from "../pics/placeholder_681_528px.png";
-// const itemName = item.name;
-// const itemDescription = item.description;
 
 function Card({item, index}) {
   return (

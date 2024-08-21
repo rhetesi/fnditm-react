@@ -1,7 +1,6 @@
 // import { useState, useEffect } from 'react'; // később kell
 // import logo from './logo.svg';
 import './App.css';
-// import cardPlaceholder from './pics/placeholder_681_528px.png'; // néha kell
 import Card from './components/Card.js';
 import items from './dev/db.js';
 
@@ -20,34 +19,18 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a> 
-        <h1 className="header-title pt-4">Talált tárgyak</h1> */}
+        </a> */}
         <h1 className="header-title">Talált tárgyak</h1>
       </header>
       <main>
         <div className="container-fluid p-4">
           <div className="mt-2">
-            {/* Itt lesz az egyedi kártyák próbája */}
+            {/* Itt lesznek egyedi kártyák */}
             <div className="row g-4">
               {
               items.map( (item, index) => {
                 return (
-                  // <div className="col">
-                  //   <div key={index} className="card border-secondary h-100">
-                  //     <img
-                  //       src={cardPlaceholder}
-                  //       className="card-img-top cardPlaceholder"
-                  //       alt="card"
-                  //     />
-                  //     <div className="card-body">
-                  //       <h5 className="card-title">{item.name}</h5>
-                  //       <p className="card-text">
-                  //         {item.description}
-                  //       </p>
-                  //     </div>
-                  //   </div>
-                  // </div>
-                  
+                                  
                   <Card item={item} index={index}/>
                   
                 )
