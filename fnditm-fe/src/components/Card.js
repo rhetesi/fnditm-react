@@ -1,6 +1,6 @@
 import cardPlaceholder from "../pics/placeholder_681_528px.png";
 
-function Card({item, index}) {
+function Card({item, index}) { // Itt kell átvenni a szülő komponensből érkező adatokat {} között
   return (
     <>
       <div className="col">
