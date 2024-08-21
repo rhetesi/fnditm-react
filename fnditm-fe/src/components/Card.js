@@ -1,6 +1,6 @@
 import cardPlaceholder from "../pics/placeholder_681_528px.png";
 
-export default function Card() {
+function Card() {
   return (
     <>
       <div className="card border-secondary h-100">
@@ -20,3 +20,5 @@ export default function Card() {
     </>
   );
 }
+
+export default Card
