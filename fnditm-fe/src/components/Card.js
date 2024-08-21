@@ -3,7 +3,7 @@ import cardPlaceholder from "../pics/placeholder_681_528px.png";
 // const itemName = item.name;
 // const itemDescription = item.description;
 
-function Card(item) {
+function Card({item}) {
   return (
     <>
       <div className="col">

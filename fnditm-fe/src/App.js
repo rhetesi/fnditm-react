@@ -1,7 +1,7 @@
 // import { useState, useEffect } from 'react'; // később kell
 // import logo from './logo.svg';
 import './App.css';
-import cardPlaceholder from './pics/placeholder_681_528px.png'; // néha kell
+// import cardPlaceholder from './pics/placeholder_681_528px.png'; // néha kell
 import Card from './components/Card.js';
 import items from './dev/db.js';
 
@@ -32,23 +32,23 @@ function App() {
               {
               items.map( (item, index) => {
                 return (
-                  <div className="col">
-                    <div key="index" className="card border-secondary h-100">
-                      <img
-                        src={cardPlaceholder}
-                        className="card-img-top cardPlaceholder"
-                        alt="card"
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title">{item.name}</h5>
-                        <p className="card-text">
-                          {item.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  // <div className="col">
+                  //   <div key={index} className="card border-secondary h-100">
+                  //     <img
+                  //       src={cardPlaceholder}
+                  //       className="card-img-top cardPlaceholder"
+                  //       alt="card"
+                  //     />
+                  //     <div className="card-body">
+                  //       <h5 className="card-title">{item.name}</h5>
+                  //       <p className="card-text">
+                  //         {item.description}
+                  //       </p>
+                  //     </div>
+                  //   </div>
+                  // </div>
                   
-                  // <Card item={item}/>
+                  <Card item={item}/>
                   
                 )
               })
