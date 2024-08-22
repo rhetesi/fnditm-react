@@ -74,9 +74,86 @@ const items = [
     {
         "id": "11",
         "name": "mobiltelefon",
-        "founddate": "202402010932",
+        "founddate": "202408300932",
         "foundplace": "T3 park",
         "description": "ezüst színű iPhone"
+    },
+    {
+        "id": "12",
+        "name": "óra",
+        "founddate": "202409021342",
+        "foundplace": "G öltöző",
+        "description": "rózsaszín műanyag, digitális női karóra"
+    },
+    {
+        "id": "13",
+        "name": "strandpapucs",
+        "founddate": "202409071025",
+        "foundplace": "Festetics öltöző",
+        "description": "kék, férfi Adidas papucs, 43-as méret"
+    },
+    {
+        "id": "14",
+        "name": "fürdőruha",
+        "founddate": "202409121130",
+        "foundplace": "E öltöző",
+        "description": "narancssárga-züld-piros nonfiguratív mintás, női bikini"
+    },
+    {
+        "id": "15",
+        "name": "jogosítvány",
+        "founddate": "202409151519",
+        "foundplace": "G előtér",
+        "description": "Minta János névre szóló jogosítvány"
+    },
+    {
+        "id": "16",
+        "name": "törölköző",
+        "founddate": "202409151632",
+        "foundplace": "G öltöző",
+        "description": "zöld technikai anyagú fürdőlepedő"
+    },
+    {
+        "id": "17",
+        "name": "sapka",
+        "founddate": "202409201700",
+        "foundplace": "Festetics öltöző",
+        "description": "fehér gyereksapka"
+    },
+    {
+        "id": "18",
+        "name": "papucs",
+        "founddate": "202409211652",
+        "foundplace": "A épület pihenőtér",
+        "description": "feekete női strandpapucs"
+    },
+    {
+        "id": "19",
+        "name": "szemüveg",
+        "founddate": "202409240854",
+        "foundplace": "G öltöző",
+        "description": "Ray-Ban Pilot utánzat férfi napszemüveg"
+    },
+    {
+        "id": "20",
+        "name": "bankkártya",
+        "founddate": "202409251543",
+        "foundplace": "G előtér",
+        "description": "Jannik Petersen névre szóló N26 bank bankkártya"
+    },
+    {
+        "id": "21",
+        "name": "fényképezőgép",
+        "founddate": "202409291002",
+        "foundplace": "F terasz",
+        "description": "Sony A7, fekete "
+    },
+    {
+        "id": "22",
+        "name": "mobiltelefon",
+        "founddate": "202410010932",
+        "foundplace": "strand",
+        "description": "Nokia105 nyomógombos telefon"
     }
 ]
 
