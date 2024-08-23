@@ -7,8 +7,8 @@ import itemlist from './dev/db.js';
 function App() {
 
   const [items, setItems] = useState([{itemlist}]);
-  const [itemsAsync, setItemsAsync] = useState([]);
-  const apiUrl = "http://127.0.0.1:3001";
+  const [itemsa, setItemsa] = useState([]);
+  const apiUrl = "https://potential-fiesta-vwqvgxpvvv7hpvx9-3000.app.github.dev/items";
 
   const [searchString, setSearchString] = useState([]);
 
@@ -29,13 +29,16 @@ function App() {
   useEffect(()=>{
     const getItemsfromAPI = async () => {
       try {
-        const response = await fetch(apiUrl);
-        const result = await response.json();
-        if (searchString.length > 0) {
-          setItemsAsync(result.filter(item => item.name.toLowerCase().includes(searchString.toLowerCase())));
-        } else {
-          setItemsAsync(result);
-        }
+        // const response = await fetch(apiUrl, { mode: 'no-cors'});
+        // const result = await response.json();
+        // // if (searchString.length > 0) {
+        // //   setItemsAsync(result.filter(item => item.name.toLowerCase().includes(searchString.toLowerCase())));
+        // // } else {
+        // //   setItemsAsync(result);
+        // // }
+        // setItemsAsync(result);
+        const result = (await fetch(apiUrl, {mode: 'no-cors'})).json();
+        setItemsa(result);
       } catch (error) {
         console.error(error)
       }
@@ -89,7 +92,7 @@ function App() {
             </div>
             <div className="row g-4">
               {
-              itemsAsync.map( (item, index) => {
+              itemsa.map( (item, index) => {
                 return (
                                   
                   <Card item={item} index={index}/>
