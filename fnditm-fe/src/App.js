@@ -1,13 +1,13 @@
-import { useState, useEffect } from 'react'; // később kell
+import { useState, useEffect } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Card from './components/Card.js';
-import itemlist from './dev/db.js';
+// import itemlist from './dev/db.js'; // ez csak a szinkron lekéréshez kellett
 
 function App() {
 
-  const [items, setItems] = useState([{itemlist}]);
-  const [itemsa, setItemsa] = useState([]);
+  // const [items, setItems] = useState([{itemlist}]); // sync, azaz szinkorn lekérés a db.js fájlból
+  const [items, setItems] = useState([]);
   const apiUrl = "https://my-json-server.typicode.com/rhetesi/fnditm-react/items";
 
   const [searchString, setSearchString] = useState([]);
@@ -17,31 +17,26 @@ function App() {
   }
 
   // Sync fetch the items to show
-  useEffect(()=>{
-    if (searchString.length > 0) {
-      setItems(itemlist.filter(item => item.name.toLowerCase().includes(searchString.toLowerCase())));
-    } else {
-      setItems(itemlist);
-    }
-  },[searchString])
+  // useEffect(()=>{
+  //   if (searchString.length > 0) {
+  //     setItems(itemlist.filter(item => item.name.toLowerCase().includes(searchString.toLowerCase())));
+  //   } else {
+  //     setItems(itemlist);
+  //   }
+  // },[searchString])
 
   // Async fetch the items to show
   useEffect(()=>{
     const getItemsfromAPI = async () => {
       try {
-        // const response = await fetch(apiUrl, { mode: 'no-cors'});
-        // const result = await response.json();
-        // // if (searchString.length > 0) {
-        // //   setItemsAsync(result.filter(item => item.name.toLowerCase().includes(searchString.toLowerCase())));
-        // // } else {
-        // //   setItemsAsync(result);
-        // // }
-        // setItemsAsync(result);
-        // const result = (await fetch(apiUrl, {mode: 'no-cors'})).json();
         const response = await fetch(apiUrl);
         const result = await response.json();
-        console.log(result);
-        setItemsa(result);
+        // console.log(result);
+        if (searchString.length > 0) {
+          setItems(result.filter(item => item.name.toLowerCase().includes(searchString.toLowerCase())));
+        } else {
+          setItems(result);
+        }
       } catch (error) {
         console.error(error)
       }
@@ -73,7 +68,7 @@ function App() {
           <div className="mt-2">
             {/* Itt lesznek egyedi kártyák */}
             {/* Ezek a kártyák a szinkron végrehajtásból */}
-            <div>
+            {/* <div>
               <h3>Szinkron lekérés</h3>
             </div>
             <div className="row g-4">
@@ -86,16 +81,15 @@ function App() {
                 )
               })
               }
-            </div>
+            </div> */}
 
             {/* Ezek a kártyák az aszinkron lekérésből */}
-            <div>
-              <br></br>
+            {/* <div>
               <h3>Aszinkron lekérés</h3>
-            </div>
+            </div> */}
             <div className="row g-4">
               {
-              itemsa.map( (item, index) => {
+              items.map( (item, index) => {
                 return (
                                   
                   <Card item={item} index={index}/>
