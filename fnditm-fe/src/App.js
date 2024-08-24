@@ -8,7 +8,7 @@ function App() {
 
   const [items, setItems] = useState([{itemlist}]);
   const [itemsa, setItemsa] = useState([]);
-  const apiUrl = "https://potential-fiesta-vwqvgxpvvv7hpvx9-3000.app.github.dev/items";
+  const apiUrl = "https://my-json-server.typicode.com/rhetesi/fnditm-react/items";
 
   const [searchString, setSearchString] = useState([]);
 
@@ -37,7 +37,10 @@ function App() {
         // //   setItemsAsync(result);
         // // }
         // setItemsAsync(result);
-        const result = (await fetch(apiUrl, {mode: 'no-cors'})).json();
+        // const result = (await fetch(apiUrl, {mode: 'no-cors'})).json();
+        const response = await fetch(apiUrl);
+        const result = await response.json();
+        console.log(result);
         setItemsa(result);
       } catch (error) {
         console.error(error)
