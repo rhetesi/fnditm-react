@@ -10,3 +10,7 @@ https://www.npmjs.com/package/json-server
 De még egyszerűbb és biztosan működik, ha a my-json-server megoldást próbálod:
 https://my-json-server.typicode.com/
 
+Image to Base64 encoder-ek
+https://www.base64-image.de/
+
+https://base64.guru/converter/encode/image/jpg
