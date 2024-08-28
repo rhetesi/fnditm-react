@@ -14,6 +14,20 @@ function App() {
     setSearchString(e.target.value)
   }
 
+  // Handling theclick on a Card
+  const handleClickCard = () => {
+    let cardButtons = document.querySelectorAll('.card');
+    for (let i = 0; i < cardButtons.length; i++) {
+        cardButtons[i].addEventListener('click', () => {
+            //console.log(cardButtons[i].value);
+            // console.log(cardButtons[i].innerHTML);
+            console.log (cardButtons[i].id); // Mivel a meglévő HTML-ben ott az ID is, így annak értékét így ki lehet olvasni! :)
+        })
+    }
+  }
+
+handleClickCard();
+
   // Async fetch the items to show
   useEffect(()=>{
     const getItemsfromAPI = async () => {
