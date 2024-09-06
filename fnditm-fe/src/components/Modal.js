@@ -33,9 +33,9 @@ function Modal({item}) {
             {/* Modal lábléce */}
             <div className="modal-footer">
               <div className="btn-group" role="group" >
-                <button type="button" className="btn-btn-info-emphasis text-white" data-bs-dismiss="modal">`Bezár (átad)`</button>
-                <button type="button" className="btn-btn-warning text-white" data-bs-dismiss="modal">`Bezár (módosít)`</button>
-                <button type="button" className="btn-btn-danger text-white" data-bs-dismiss="modal">`Bezár (töröl)`</button>
+                <button type="button" className="btn-btn-info-emphasis text-white" data-bs-dismiss="modal"><span><i class="bi bi-send"></i></span>`Bezár (átad)`</button>
+                <button type="button" className="btn-btn-warning text-white" data-bs-dismiss="modal"><span><i class="bi bi-pencil"></i></span>`Bezár (módosít)`</button>
+                <button type="button" className="btn-btn-danger text-white" data-bs-dismiss="modal"><span><i class="bi bi-trash"></i></span>`Bezár (töröl)`</button>
               </div>
             </div>
 

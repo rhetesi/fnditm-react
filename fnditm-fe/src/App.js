@@ -63,7 +63,8 @@ handleClickCard();
           Learn React
         </a> */}
         <h1 className="header-title">Talált tárgyak</h1>
-        <input type="text" placeholder="tárgy keresése" className="text-small" onChange={searchChange}></input>
+        <label for="search"><i class="bi bi-search"></i></label>
+        <input id="serch" type="text" placeholder="tárgy keresése" className="text-small" onChange={searchChange}></input>
         <p>{searchString}</p>
       </header>
       <main>
