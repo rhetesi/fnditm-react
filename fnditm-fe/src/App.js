@@ -63,8 +63,17 @@ handleClickCard();
           Learn React
         </a> */}
         <h1 className="header-title">Talált tárgyak</h1>
-        <label for="search"><i class="bi bi-search"></i></label>
-        <input id="serch" type="text" placeholder="tárgy keresése" className="text-small" onChange={searchChange}></input>
+        {/* <label for="search"><i class="bi bi-search"></i></label> */}
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col"> </div>
+            <div className="col"> </div>
+            <div className="col input-group">
+              <span className='input-group-text'><i class="bi bi-search"></i></span>
+              <input id="serch" type="text" placeholder="keresés" className="text-small form-control" onChange={searchChange}></input>
+            </div>
+          </div>
+        </div>
         <p>{searchString}</p>
       </header>
       <main>
