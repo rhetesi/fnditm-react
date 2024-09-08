@@ -4,7 +4,7 @@ function Card({item, index}) { // Itt kell átvenni a szülő komponensből érk
   return (
     <>
       <div className="col">
-        <div key={index} className="card border-secondary h-100" id={item.id}>
+        <div key={index} className="card shadow border-secondary h-100" id={item.id}>
           <img
             src={cardPlaceholder}
             className="card-img-top cardPlaceholder"
