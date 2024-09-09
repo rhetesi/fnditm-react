@@ -1,44 +1,34 @@
 import cardPlaceholder from "../pics/placeholder_681_528px.png";
 
-function Modal({item}) {
+function Modal({ item }) {
   return (
     <>
       {/* Modal */}
-      <div className="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false">
-        <div className="modal-dialog modal-dialog-centered modal-lg">
-          <div className="modal-content">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
 
-            {/* Modal fejléce */}
-            <div className="modal-header">
-              <h4 className="modal-title">Talált tárgy részletei</h4>
-            </div>
-
-            {/* Modal tartalma */}
-            <div className="modal-body">
-                <div key={index} className="card border-secondary h-100" id={item.id}>
-                  <img
-                    src={cardPlaceholder}
-                    className="card-img-top cardPlaceholder"
-                    alt="card"
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">{item.name}</h5>
-                    <p className="card-text">
-                      {item.description}
-                    </p>
+            <div class="modal-body">
+              <div class="card shadow mb-3 h-100" style="max-width: 1024px;" id={item.id}>
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://picsum.photos/3200" class="img-fluid rounded-start" alt="iphone"></img>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">${item.title}</h5>
+                      <p class="card-text">${item.description}</p>
+                      <p class="card-text">Találta: ${item.author}</p>
+                      {/* <p class="card-text"><small class="text-body-secondary">${modalTime}</small></p> */}
+                    </div>
                   </div>
                 </div>
-            </div>
-
-            {/* Modal lábléce */}
-            <div className="modal-footer">
-              <div className="btn-group" role="group" >
-                <button type="button" className="btn-btn-info-emphasis text-white" data-bs-dismiss="modal"><span><i class="bi bi-send"></i></span>`Bezár (átad)`</button>
-                <button type="button" className="btn-btn-warning text-white" data-bs-dismiss="modal"><span><i class="bi bi-pencil"></i></span>`Bezár (módosít)`</button>
-                <button type="button" className="btn-btn-danger text-white" data-bs-dismiss="modal"><span><i class="bi bi-trash"></i></span>`Bezár (töröl)`</button>
               </div>
             </div>
-
+            {/* <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> */}
           </div>
         </div>
       </div>

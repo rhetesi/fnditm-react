@@ -10,6 +10,9 @@ https://www.npmjs.com/package/json-server
 De még egyszerűbb és biztosan működik, ha a my-json-server megoldást próbálod:
 https://my-json-server.typicode.com/
 
+Véletlen kép beszúrása, hogy ne üres placeholder legyen a szerkesztés alatt:
+https://picsum.photos/
+
 Image to Base64 encoder-ek
 https://www.base64-image.de/
 
